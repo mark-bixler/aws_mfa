@@ -36,6 +36,11 @@ Environment variables need to be stored with the following names:
 
 - Change the line `$ASSUME_ROLE = "MyRoleForCrossAccountAccess"`to your proper assumed role in AWS.
 
+##### Region
+
+- I hard coded the region for my script to be `us-west-1`
+  - `Add-Content $AWS_CONFIG "region = us-west-1"`// lines 70 & 100
+  - At the time of this writing, AWS required a region to be set in the config. I may change this in a future update.
 
 #### aws_accounts.txt
 
